@@ -1,4 +1,4 @@
-export default function Login({ password, setPassword, handleLogin }) {
+export default function Login({ password, onPasswordChange, handleLogin }) {
   return (
     <div className="min-h-screen flex items-center justify-center relative overflow-hidden font-sans z-20 p-4">
       <div className="absolute inset-0 pointer-events-none overflow-hidden">
@@ -24,7 +24,7 @@ export default function Login({ password, setPassword, handleLogin }) {
             type="text"
             placeholder="كلمة السر"
             value={password}
-            onChange={(e) => setPassword(e.target.value)}
+            onChange={onPasswordChange}
             onKeyDown={(e) => e.key === 'Enter' && handleLogin()}
             className="w-full max-w-[256px] p-3 sm:p-4 rounded-2xl border border-white/30 bg-white/20 focus:border-primary-300 focus:bg-white/30 focus:outline-none text-center text-lg sm:text-xl text-white shadow-inner transition-all placeholder-white/50"
           />

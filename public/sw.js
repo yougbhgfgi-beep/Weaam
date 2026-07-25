@@ -1,13 +1,15 @@
-const CACHE_NAME = 'weaam-birthday-v1'
+const CACHE_NAME = 'weaam-birthday-v2'
 const ASSETS = [
   '/',
   '/index.html',
   '/icon-192.png',
   '/icon-512.png',
+  '/favicon.png',
   '/manifest.json',
   '/images/img1.jpg',
   '/images/img2.jpg',
   '/images/img3.jpg',
+  '/images/preview.jpg',
   '/media/song.mp3',
   '/media/video.mp4'
 ]

@@ -32,17 +32,28 @@ export default function App() {
     return () => window.removeEventListener('resize', check)
   }, [])
 
+  const playAudio = () => {
+    if (audioRef.current && !isPlaying) {
+      const playPromise = audioRef.current.play()
+      if (playPromise !== undefined) {
+        playPromise
+          .then(() => setIsPlaying(true))
+          .catch(() => {})
+      }
+    }
+  }
+
+  const handlePasswordChange = (e) => {
+    setPassword(e.target.value)
+    if (e.target.value.trim() === '29725') {
+      playAudio()
+    }
+  }
+
   const handleLogin = () => {
     if (password.trim() === '29725') {
+      playAudio()
       setIsLogged(true)
-      if (audioRef.current) {
-        const playPromise = audioRef.current.play()
-        if (playPromise !== undefined) {
-          playPromise
-            .then(() => setIsPlaying(true))
-            .catch(error => console.log('Audio playback failed:', error))
-        }
-      }
       setTimeout(() => setShowMessage(true), 1200)
     } else {
       alert('كلمة السر غلط! جربي (29725) 🎂')
@@ -94,7 +105,7 @@ export default function App() {
       </button>
 
       {!isLogged ? (
-        <Login password={password} setPassword={setPassword} handleLogin={handleLogin} />
+        <Login password={password} onPasswordChange={handlePasswordChange} handleLogin={handleLogin} />
       ) : (
         <div className="relative z-10">
           <Navbar />
