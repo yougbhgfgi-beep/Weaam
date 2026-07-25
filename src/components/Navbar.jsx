@@ -4,7 +4,7 @@ export default function Navbar() {
       <div className="text-base sm:text-xl md:text-2xl font-bold font-script text-primary-300 truncate">🎂 Happy Birthday Weaam</div>
       <div className="flex gap-3 sm:gap-6 text-xs sm:text-sm md:text-base">
         <a href="#cake" className="hover:text-primary-300 transition-colors whitespace-nowrap">التورتة</a>
-        <a href="#memories" className="hover:text-primary-300 transition-colors whitespace-nowrap">ذكرياتنا</a>
+        <a href="#memories" className="hover:text-primary-300 transition-colors whitespace-nowrap">صور</a>
         <a href="#video" className="hover:text-primary-300 transition-colors whitespace-nowrap">الفيديو</a>
         <a href="#wishes" className="hover:text-primary-300 transition-colors whitespace-nowrap">المنünsات</a>
       </div>
