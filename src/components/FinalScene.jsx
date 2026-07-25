@@ -56,7 +56,7 @@ export default function FinalScene({ onClose }) {
         {step >= 2 && step < 10 && (
           <div className="mt-8 sm:mt-12 space-y-6 sm:space-y-8 px-2">
             {step >= 2 && <p className="text-lg sm:text-xl md:text-2xl text-gray-300 animate-fade-in leading-relaxed">في يوم زي النهارده… <span className="text-primary-300 font-bold block mt-2 text-xl sm:text-2xl md:text-3xl">اتولد Weaam، أعز إنسان في حياتي.</span></p>}
-            {step >= 3 && <p className="text-lg sm:text-xl md:text-2xl text-gray-300 animate-fade-in mt-6 sm:mt-8 leading-relaxed">عايزه اقولك… <span className="text-primary-400 font-bold block mt-2 text-xl sm:text-2xl md:text-3xl">إنت أغلى حد في حياتي يا Weaam.</span></p>}
+            {step >= 3 && <p className="text-lg sm:text-xl md:text-2xl text-gray-300 animate-fade-in mt-6 sm:mt-8 leading-relaxed">عايزه اقولك… <span className="text-primary-400 font-bold block mt-2 text-xl sm:text-2xl md:text-3xl">إنت أغلى حد في حياتي.</span></p>}
             {step >= 5 && <div className="h-px w-24 bg-gray-800 mx-auto my-6 sm:my-8 animate-fade-in"></div>}
             {step >= 6 && <p className="text-base sm:text-lg md:text-xl text-gray-500 italic animate-fade-in px-2">"لو كل سنة ليك أجمل من اللي قبلها…"</p>}
             {step >= 7 && <p className="text-2xl sm:text-3xl md:text-4xl font-bold text-white mt-4 sm:mt-6 animate-slide-up px-2">ربنا يبارلك يا Weaam…</p>}
