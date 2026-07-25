@@ -49,7 +49,7 @@ export default function FinalScene({ onClose }) {
       <div className="relative z-10 max-w-4xl w-full flex flex-col items-center justify-center min-h-[60vh]">
         {step === 1 && (
           <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-6xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-primary-300 to-primary-500 animate-slide-up leading-tight px-2">
-            🎂 كل سنة وانت طيب يا Weaam 🎂
+            🎂 كل سنة وانت طيب يا وئام 🎂
           </h1>
         )}
 
