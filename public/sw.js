@@ -1,4 +1,4 @@
-const CACHE_NAME = 'weaam-birthday-v2'
+const CACHE_NAME = 'weaam-v99'
 const ASSETS = [
   '/',
   '/index.html',
