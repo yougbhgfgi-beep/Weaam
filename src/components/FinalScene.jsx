@@ -82,7 +82,7 @@ export default function FinalScene({ onClose }) {
             )}
             {step >= 14 && (
               <p className="mt-6 sm:mt-8 text-sm sm:text-lg md:text-xl text-primary-200 font-light animate-slide-up max-w-2xl leading-relaxed px-4">
-                "يا Weaam، ربنا يخليك ويباركلك في عمرك، ويعمل كل خير ليك. كل سنة وانت طيب يا أغلى إنسان.. Doha ❤️"
+                "يا وئام، ربنا يخليك ويباركلك في عمرك، ويعمل كل خير ليك. كل سنة وانت طيب يا أغلى إنسان.. Doha ❤️"
               </p>
             )}
           </div>
